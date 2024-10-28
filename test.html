@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyTube</title>
+    <style> 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #ff0000;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.video {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 10px;
+    width: 300px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.video iframe {
+    width: 100%;
+    height: 200px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MyTube</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Trending</a></li>
+                <li><a href="#">Subscriptions</a></li>
+                <li><a href="#">Library</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="video-container">
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                <h3>Video Title</h3>
+                <p>Video Description</p>
+            </div>
+            <!-- Add more video divs as needed -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 MyTube. All rights reserved.</p>
+    </footer>
+</body>
+</html>
